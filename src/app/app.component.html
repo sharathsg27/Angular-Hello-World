@@ -1,1 +1,9 @@
-<h1>Angular App</h1>
+<div>
+  <h1>{{title}}</h1>
+  <nav>
+    <a routerLink="/dashboard" [queryParams]="{page: 1, order: 'newDashboard' }">Dashboard</a>
+    <a routerLink="/heroes" [queryParams]="{page: 2, order: 'newHeroes' }">Heroes</a>
+  </nav>
+  <router-outlet></router-outlet>
+
+</div>
