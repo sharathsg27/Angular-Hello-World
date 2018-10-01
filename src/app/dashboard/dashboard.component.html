@@ -2,9 +2,10 @@
 
 <h3>Top Heroes</h3>
 <div class="grid grid-pad">
-  <a *ngFor="let hero of heroes" class="col-sm-4" routerLink="/detail/{{hero.id}}">
-    <div class="module hero">
-      <h4>{{hero.name}}</h4>
-    </div>
-  </a>
+  <ul class="list-group">
+    <li class="list-group-item col-sm-4" *ngFor="let hero of heroes" @slide @fade>
+      <a routerLink="/detail/{{hero.id}}">{{hero.name}}</a>
+      <button class="btn btn-sm btn-danger text-right" (click)="delete(hero);">Delete</button>
+    </li>
+  </ul>
 </div>

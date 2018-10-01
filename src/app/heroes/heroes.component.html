@@ -4,7 +4,7 @@
          ngModel>
 </div>
 <ul class="heroes">
-  <li *ngFor="let hero of heroes" routerLink="/detail/{{hero.id}}">
+  <li *ngFor="let hero of heroes" routerLink="/detail/{{hero.id}}" @fade>
     <a>
       <span class="badge">{{hero.id}}</span> {{hero.name}}
     </a>

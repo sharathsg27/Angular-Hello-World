@@ -3,11 +3,15 @@ import {HeroesService} from './heroes.service';
 import {Observable} from 'rxjs';
 
 import HeroesInterface from './heroes.interface';
+import {fade} from '../animations/animations';
 
 @Component({
   selector: 'app-heroes',
   templateUrl: './heroes.component.html',
-  styleUrls: ['./heroes.component.css']
+  styleUrls: ['./heroes.component.css'],
+  animations: [
+    fade
+  ]
 })
 export class HeroesComponent implements OnInit {
   heroes: any[];

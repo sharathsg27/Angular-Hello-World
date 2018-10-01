@@ -7,7 +7,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "deploy:firebase": "ng build --prod && firebase deploy",
+    "deploy:gh": "ng build --prod --base-href='https://sharathsg27.github.io/Angular-IO-CRUD'"
   },
   "private": true,
   "dependencies": {
@@ -27,6 +29,7 @@
     "material-design-icons": "^3.0.1",
     "npm": "^6.4.1",
     "rxjs": "~6.2.0",
+    "web-animations-js": "^2.3.1",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
